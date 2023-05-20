@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: palevioletred;
+    overflow-x: hidden;
+        min-height: 100vh;
+        min-height: fill-available;
+        min-height: -webkit-fill-available;
+}
+
+.f_title {
+    font-family: 'Creepster', cursive;
+}
+.sidebar {
+    background-color: teal;
+    width: max-content;
+    padding: 20px 5px 10px 0px;
+    border-bottom-right-radius: 25px;
+    transform: translate(-100%);
+    transition: .3s all;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 10;
+}
+
+.show {
+    transform: translate(0px);
+}
+
+ul {
+    width: 100%;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 7px 60px 5px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+    box-shadow: #333 0px 1px 1px 0px;
+    transition: .5s transform;
+}
+
+.sidebar ul li:hover {
+    transform: translate(5px);
+    background-color: rgb(5, 38, 38);
+    color: wheat;
+}
+
+
+.toggle {
+    color: whitesmoke;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    cursor: pointer;
+}
+
+.close {
+    margin: 10px;
+    width: 100px;
+    height: 27px;
+    padding: 5px 6px 27px 6px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.result {
+    display: none;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Practice Session</title>
+</head>
+<body>
+    <div class="sidebar" id="sideb">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Donate</li>
+        </ul>
+        <button onclick="togg()" class="close bg-green-600 text-white hover:text-green-600 hover:border-green-600">Close</button>
+    </div>
+    <button onclick="togg()" class="toggle hidden">&#8801;</button>
+
+    <!-- main -->
+
+    <h1 class="text-4xl max-w-max mt-20 mx-auto f_title text-white drop-shadow-xl">Love Calculator</h1>
+
+    <div class="main flex flex-col gap-3 px-10 mt-10 md:px-96">
+           <div>
+            <input id="nameOne" class="w-full p-2 bg-transparent border-b-2 outline-none text-white placeholder-white" type="text" placeholder="Your Name" onfocus="this.value = ''" required>
+           </div>
+           <div>
+            <input id="nameTwo" class="w-full p-2 bg-transparent border-b-2 outline-none text-white placeholder-white" type="text" placeholder="Lover's Name" onfocus="this.value = ''" required>
+           </div>
+           <button onclick="calculator()" class="bg-green-600 text-white py-1 w-full md:w-fit px-10 mx-auto" type="submit">Submit</button>
+    </div>
+
+
+    <!-- erro box -->
+<div id="box" class="result my-6 mx-10 md:mx-96 p-4">
+    <p id="text" class="result-text text-lg w-fit mx-auto">
+    </p>
+</div>
+
+
+<footer class="bg-green-600 p-2 w-full footer">
+    <p class="w-fit mx-auto text-white">Created By <a href="https://www.amadism.com/">@Amadism -</a><span class="text-blue-600 font-bold italic"> for fun</span></p>
+</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
