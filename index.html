@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amad Aslam - Portfolio" />
+	<meta name="keywords" content="blog, creative, creative portfolio, online resume, personal, professional cv, portfolio, resume, Christianity" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Practice Session</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <script src="https://kit.fontawesome.com/25c11668c0.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script> -->
+    <meta name="author" content="Amadism" />
+    <title>Love Calculator | Amadism</title>
 </head>
-<body>
-    <div class="sidebar" id="sideb">
-        <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Donate</li>
-        </ul>
-        <button onclick="togg()" class="close bg-green-600 text-white hover:text-green-600 hover:border-green-600">Close</button>
+
+<body class="bg-black px-5 flex items-center">
+    
+    <div class="main p-5 text-white rounded-xl h-fit lg:w-2/3 lg:m-auto">
+        <!-- first -->
+        <div class="">
+            <h1 class="pb-2 text-2xl font-extrabold name animate__animated animate__fadeInDown animate__slow">Love Calculator<span>.</span></h1>
+            <div class="line w-0 linecolor"></div>
+
+            <p class="mt-6 mb-3 text-gray-300 text-lg animate__animated animate__fadeIn animate__delay-2s	2s animate__slow">The Love Calculator is an affective way to get an impression of what the chances are on a relationship between two people.
+                <br>
+                To find out what the chances for you and your dream partner are, just fill in both full names (both first and last name) in the two text boxes below, and press Calculate.
+                <br>
+            </p>
+
+           <div class="form_div">
+               
+                <input type="text" class="text mb-4 border-gray-300 border-b rounded-none p-2" id="fname" name="fname" placeholder="Your Name" value="" required>
+                <br>
+                <input type="text" class="text mb-4 border-gray-300 border-b p-2 rounded-none" id="sname" name="sname" placeholder="Lover's Name" value="" required><br>
+
+                <button onclick="calculator()" class="btn text-gray-300">Submit</button><img id="image" class="imag" src="spin.gif" alt="">
+              
+            </div>
+        </div>
+
+        <!-- result -->
+<br>
+<br>
+        <div id="box" class="reult_div mt-2 bg-slate-950 rounded-lg p-4">
+            <p class="text-lg" id="text">
+               
+            </p>
+        </div>
     </div>
-    <button onclick="togg()" class="toggle hidden">&#8801;</button>
 
-    <!-- main -->
+    <footer class="absolute bottom-0 right-0 bg-slate-950 w-full flex items-center pl-3">
+       <div class="flex-1 relative flex gap-2">
+        <div class="ball overflow-hidden"></div>
+        <div class="ball2 bg-gray-300 overflow-hidden"></div>
+        <div class="ball3 bg-gray-300 overflow-hidden"></div>
+       </div>
+       <div class="float-right relative z-20 bg-slate-950">
+        <p class="ftext text-lg text-gray-300 pr-3"> created by 
+            <a href="https://www.amadism.com">Amadism</a>
+        </p>
+       </div>
+    </footer>
+    <!-- END HTML -->
 
-    <h1 class="text-4xl max-w-max mt-20 mx-auto f_title text-white drop-shadow-xl">Love Calculator</h1>
-
-    <div class="main flex flex-col gap-3 px-10 mt-10 md:px-96">
-           <div>
-            <input id="nameOne" class="w-full p-2 bg-transparent border-b-2 outline-none text-white placeholder-white" type="text" placeholder="Your Name" onfocus="this.value = ''" required>
-           </div>
-           <div>
-            <input id="nameTwo" class="w-full p-2 bg-transparent border-b-2 outline-none text-white placeholder-white" type="text" placeholder="Lover's Name" onfocus="this.value = ''" required>
-           </div>
-           <button onclick="calculator()" class="bg-green-600 text-white py-1 w-full md:w-fit px-10 mx-auto" type="submit">Submit</button>
-    </div>
-
-
-    <!-- erro box -->
-<div id="box" class="result my-6 mx-10 md:mx-96 p-4">
-    <p id="text" class="result-text text-lg w-fit mx-auto">
-    </p>
-</div>
-
-
-<footer class="bg-green-600 p-2 w-full footer">
-    <p class="w-fit mx-auto text-white">Created By <a href="https://www.amadism.com/">@Amadism -</a><span class="text-blue-600 font-bold italic"> for fun</span></p>
-</footer>
-
-    <script src="index.js"></script>
+    
+    <script src="calcu.js"></script>
 </body>
+
 </html>

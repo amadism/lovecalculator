@@ -1,94 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
+:root {
+--pink: #EE204D;
 }
 
 body {
-    background-color: palevioletred;
-    overflow-x: hidden;
-        min-height: 100vh;
-        min-height: fill-available;
-        min-height: -webkit-fill-available;
+   min-height: 100vh;
+   min-height: fill-available;
+   min-height: -webkit-fill-available;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
 }
 
-.f_title {
-    font-family: 'Creepster', cursive;
-}
-.sidebar {
-    background-color: teal;
-    width: max-content;
-    padding: 20px 5px 10px 0px;
-    border-bottom-right-radius: 25px;
-    transform: translate(-100%);
-    transition: .3s all;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    z-index: 10;
+html {
+    height: fill-available;
+    height: -webkit-fill-available;
 }
 
-.show {
-    transform: translate(0px);
+.main {
+    background-color: #141712;
 }
 
-ul {
-    width: 100%;
+
+span {
+    color: var(--pink);
 }
 
-.sidebar ul li{
-    list-style: none;
-    padding: 7px 60px 5px 10px;
+
+
+.linecolor {
+    background-color: var(--pink);
+    max-width: 140px;
+    height: 3px;
+}
+
+.icon {
+    margin-right: 10px;
+    background-color: rgb(28, 27, 27);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.icon:hover {
+    background-color: rgb(35, 33, 33);
+}
+
+.lbtn {
+    border-bottom: 1px var(--pink) solid;
+    padding: 5px;
+}
+
+.text {
+    background-color: transparent;
+    outline: none;
+    color: #EE204D;
+}
+
+.form_div .btn {
+    background-color: #EE204D;
     cursor: pointer;
-    margin-bottom: 5px;
-    border-bottom: 1px solid black;
-    box-shadow: #333 0px 1px 1px 0px;
-    transition: .5s transform;
+    padding: 3px 55px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 0%;
+    float: left;
 }
 
-.sidebar ul li:hover {
-    transform: translate(5px);
-    background-color: rgb(5, 38, 38);
-    color: wheat;
+.imag {
+    margin-left: 5px;
+    width: 50px;
+    float: left;
+   display: none;
 }
 
-
-.toggle {
-    color: whitesmoke;
-    font-size: 50px;
-    position: absolute;
-    top: 0;
-    right: 3%;
-    cursor: pointer;
+.reult_div {
+   display: none;
 }
 
-.close {
-    margin: 10px;
-    width: 100px;
-    height: 27px;
-    padding: 5px 6px 27px 6px;
-    border-bottom-right-radius: 15px;
-    color: white;
-    cursor: pointer;
+.ftext {
+    font-family: 'Great Vibes', cursive;
 }
 
-.close:hover{
-    background-color: white;
+.linediv {
+    height: 1px;
 }
 
-.green {
-    background-color: green;
-    color: white;
+.ball{
+
+    width: 10px;
+    height: 10px;
+    background-color: #EE204D;
+    border-radius: 50%;
+    animation: move 5s infinite;
+    animation-delay: 3s;
+}
+.ball2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: move 5s infinite;
 }
 
-.result {
-    display: none;
-    color: white;
+.ball3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: move 5s infinite;
+    animation-delay: 2s;
 }
-
-.footer {
-    position: absolute;
-    bottom: 0;
+@keyframes move{
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(100vw , 0px);
+    }
+    
 }
